@@ -1,0 +1,1160 @@
+@font-face {
+  font-family: "Andalus";
+  src: url(../assets/Fonts/Andalus.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #b2ae8a;
+}
+
+/* NavBar */
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+.bg-glass-logo-jawlah {
+  display: none;
+}
+
+.logo-jawlah {
+  position: absolute;
+  width: 80%;
+  animation: fadeInUp3 1.75s ease-out forwards;
+}
+
+.bg-glass-navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 65px;
+  width: 35%;
+  border-radius: 0 0 8rem 8rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.37);
+  animation: fadeInUp2 1.75s ease-out forwards;
+}
+
+@keyframes fadeInUp2 {
+  from {
+    opacity: 0.1;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.txt-navbar {
+  text-decoration: none;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: "Amiri Quran", serif;
+  font-size: 1.375rem;
+  animation: fadeInUp3 1.75s ease-out forwards;
+  transition: 0.7s;
+}
+
+@keyframes fadeInUp3 {
+  from {
+    opacity: 0.1;
+    scale: 0.5;
+    transform: translateY(-25px);
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0);
+  }
+}
+
+.txt-navbar:hover {
+  color: #9e8a45;
+  opacity: 1;
+}
+/* End NavBar */
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.logo {
+  border-bottom: 1px solid black;
+  margin: 0 2rem;
+}
+.logo-Jawlah {
+  width: 22%;
+  object-fit: contain;
+  margin-top: 5rem;
+}
+
+.About-Jawlah {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+  margin-left: 50rem;
+}
+
+.Title-About-Jawlah {
+  text-align: center;
+  font-family: "Andalus";
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.dotte {
+  color: black;
+  font-family: "Amiri Quran", serif;
+}
+
+.Desc-About-Jawlah {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 350;
+  font-size: 1.25rem;
+  text-align: justify;
+  padding: 0 2.5rem;
+  line-height: 22px;
+}
+
+.arrow-down {
+  width: 8%;
+  margin-left: 1.75rem;
+  margin-top: 1rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-Desert-and-Camels {
+  border-radius: 0 128px 128px 0;
+  width: 95%;
+  margin-top: 2rem;
+}
+
+.container-Behind-Jawlah {
+  display: flex;
+  border-bottom: 1px solid black;
+  margin: 0 2rem;
+}
+
+.Title-Behind-Jawlah {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-family: "Andalus";
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.dotte {
+  font-size: 2rem;
+  color: black;
+  font-family: "Amiri Quran", serif;
+}
+
+.Desc-Behind-Jawlah {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 350;
+  font-size: 1.25rem;
+  margin: 0 2rem;
+  text-align: justify;
+  line-height: 22px;
+}
+
+.image-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: 2rem;
+}
+.Images-Behind-Jawlah {
+  width: 90%;
+}
+
+#style-img-camel {
+  border-radius: 128px 0 0 0;
+}
+
+#style-img-Quad-Bike {
+  border-radius: 0 0 128px 0;
+}
+
+.desc-image {
+  text-align: center;
+  font-family: "Andalus";
+  font-weight: 500;
+}
+
+.feature-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 3rem;
+  margin-left: 11rem;
+}
+
+.feature {
+  width: 370px;
+  height: 300px;
+}
+
+.img-feature {
+  width: 20%;
+}
+.title-feature {
+  font-family: "Andalus";
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.desc-feature {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 350;
+  font-size: 1.25rem;
+  text-align: justify;
+  padding-right: 8rem;
+  margin-top: 0.25rem;
+  line-height: 22px;
+}
+
+.Title-client-say {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-family: "Andalus";
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+sup {
+  font-size: 3rem;
+  color: #9e8a45;
+}
+
+.client-say-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.client {
+  width: 370px;
+  height: 225px;
+}
+
+.client-say {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 350;
+  font-size: 1.25rem;
+  text-align: justify;
+  margin-top: 0.25rem;
+  line-height: 22px;
+}
+
+.client-name {
+  font-family: "Andalus";
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.container-quote {
+  display: flex;
+  margin: 0 2rem;
+}
+
+.quote {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-family: "Andalus";
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 50px;
+  padding: 0 6rem;
+}
+
+.img-camel-rest {
+  width: 38%;
+  border-radius: 0 0 128px 0;
+  margin-left: 6.9rem;
+  margin-top: 2rem;
+}
+
+.img-shadow-camels {
+  margin-top: 5rem;
+  background-image: url(../assets/Images/Shadow\ camel.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.question {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 350;
+  font-size: 1.25rem;
+}
+
+.Book {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-family: "Andalus";
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+.Book::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  border-radius: 50px;
+  transform: scaleX(0);
+  transition: transform 0.2s linear;
+}
+
+.Book:hover::before {
+  transform: scaleX(1);
+}
+
+footer {
+  background-color: #231709;
+}
+
+.logo-jawlah-footer {
+  width: 15%;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-footer {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.75rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  width: 31.25rem;
+  margin-top: 1rem;
+}
+
+.form-control {
+  border: none;
+  border-radius: 6px;
+  height: 37.33px;
+  padding: 0.75rem;
+}
+
+.form-control:focus,
+textarea:focus,
+.btn-send:focus {
+  outline: none;
+}
+
+textarea {
+  font-family: "DM Sans", sans-serif;
+  resize: none;
+  border-radius: 6px;
+  height: 157px;
+  padding: 0.75rem;
+}
+
+.container-btn-send {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-send {
+  background-color: white;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.1rem 1.5rem;
+  border-radius: 6px;
+  width: 84px;
+  height: 28px;
+  border: none;
+}
+
+.btn-txt-send{
+  color: black;
+}
+
+.Copyright-footer {
+  text-align: right;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  margin-right: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+/* ----------------------------------- Media Query Mobile ------------------------------------------------- */
+
+@media (max-width: 576px) {
+  body {
+    background-image: url(../assets/Images/Wave.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .bg-glass-logo-jawlah {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    width: 55px;
+    height: 55px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .logo-jawlah {
+    position: absolute;
+    width: 80%;
+  }
+  .content-navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .bg-glass-navbar {
+    background-image: url(../assets/Icons/Burger.png);
+    background-size: 50px 50px;
+    background-position: -4px 8px;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+
+  .txt-navbar {
+    display: none;
+  }
+
+  .container {
+    margin: 0 1.25rem;
+  }
+
+  .logo {
+    margin: 0 2rem;
+  }
+
+  .logo-Jawlah {
+    display: none;
+  }
+
+  .About-Jawlah {
+    margin-top: 13rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+
+  .Title-About-Jawlah {
+    border-top: 1px black solid;
+    text-align: left;
+    font-size: 2.5rem;
+  }
+
+  .Desc-About-Jawlah {
+    font-size: 1rem;
+    line-height: 22px;
+    padding: 0;
+  }
+
+  .arrow-down {
+    width: 8%;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-Desert-and-Camels {
+    border-radius: 0 32px 32px 0;
+    width: 95%;
+    margin-top: 1rem;
+  }
+
+  .container-Behind-Jawlah {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .Title-Behind-Jawlah {
+    text-align: justify;
+    margin-top: 1rem;
+    margin-left: 0;
+    font-size: 2.5rem;
+  }
+
+  .Desc-Behind-Jawlah {
+    font-size: 1.25rem;
+    margin: 0;
+    text-align: justify;
+    line-height: 22px;
+  }
+
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2rem;
+  }
+
+  .Images-Behind-Jawlah {
+    width: 100%;
+  }
+
+  #style-img-camel {
+    border-radius: 64px 0 0 0;
+  }
+
+  #style-img-Quad-Bike {
+    border-radius: 0 0 64px 0;
+  }
+
+  .desc-image {
+    text-align: center;
+    font-family: "Andalus";
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .feature-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+
+  .feature {
+    width: 370px;
+    height: 300px;
+  }
+
+  .img-feature {
+    width: 20%;
+  }
+
+  .title-feature {
+    font-family: "Andalus";
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .desc-feature {
+    padding-right: 4rem;
+  }
+  .Title-client-say {
+    margin-top: 2rem;
+    margin-left: 0;
+    font-size: 2.25rem;
+  }
+
+  sup {
+    font-size: 2rem;
+    color: #9e8a45;
+  }
+
+  .client-say-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin: 1.5rem 0;
+  }
+
+  .client {
+    width: 370px;
+    height: 225px;
+  }
+
+  .client-say {
+    font-size: 1.25rem;
+    text-align: justify;
+    margin-top: 0.25rem;
+    line-height: 22px;
+    padding-right: 4rem;
+    padding-left: 1rem;
+  }
+
+  .client-name {
+    font-family: "Andalus";
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+    margin-left: 1rem;
+  }
+
+  .container-quote {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .quote {
+    margin-top: 2rem;
+    margin-left: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 50px;
+    padding: 0;
+  }
+
+  .img-camel-rest {
+    width: 100%;
+    border-radius: 0 0 128px 0;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .img-shadow-camels {
+    margin-top: 5rem;
+    background-image: url(../assets/Images/Shadow\ camel.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .question {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 350;
+    font-size: 1rem;
+  }
+
+  .Book {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-family: "Andalus";
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+
+  .Book::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+  }
+
+  .Book:hover::before {
+    transform: scaleX(1);
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  .logo-jawlah-footer {
+    width: 15%;
+  }
+  .btn-Confirm-Booking {
+    margin-top: 2rem;
+    height: 2rem;
+    width: 140px;
+  }
+
+  .btn-txt-Confirm-Booking {
+    font-size: 0.85rem;
+  }
+
+  .title-footer {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .form-label {
+    margin-top: 1rem;
+    width: 20rem;
+  }
+
+  .bg-glass-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+  }
+
+  .Copyright-footer {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+  }
+}
+/* ----------------------------------- Media Query tablet ------------------------------------------------- */
+
+@media (min-width: 577px) and (max-width: 1100px) {
+  body {
+    background-image: url(../assets/Images/Wave.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .bg-glass-logo-jawlah {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    width: 75px;
+    height: 75px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .logo-jawlah {
+    position: absolute;
+    width: 80%;
+  }
+  .content-navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .bg-glass-navbar {
+    background-image: url(../assets/Icons/Burger.png);
+    background-size: 50px 50px;
+    background-position: 6px 16px;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+
+  .txt-navbar {
+    display: none;
+  }
+
+  .container {
+    margin: 0 2rem;
+  }
+
+  .logo {
+    margin: 0 2rem;
+  }
+
+  .logo-Jawlah {
+    display: none;
+  }
+
+  .About-Jawlah {
+    margin-top: 20rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+
+  .Title-About-Jawlah {
+    border-top: 1px black solid;
+    text-align: left;
+    font-size: 3rem;
+  }
+
+  .Desc-About-Jawlah {
+    font-size: 1.5rem;
+    line-height: 22px;
+    padding: 0;
+  }
+
+  .arrow-down {
+    width: 8%;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-Desert-and-Camels {
+    border-radius: 0 64px 64px 0;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .container-Behind-Jawlah {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .Title-Behind-Jawlah {
+    text-align: justify;
+    margin-top: 1rem;
+    margin-left: 0;
+    font-size: 3rem;
+  }
+
+  .Desc-Behind-Jawlah {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: justify;
+    line-height: 22px;
+  }
+
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2rem;
+  }
+
+  .Images-Behind-Jawlah {
+    width: 100%;
+  }
+
+  #style-img-camel {
+    border-radius: 64px 0 0 0;
+  }
+
+  #style-img-Quad-Bike {
+    border-radius: 0 0 64px 0;
+  }
+
+  .desc-image {
+    text-align: center;
+    font-family: "Andalus";
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  .feature-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+
+  .feature {
+    width: 370px;
+    height: 300px;
+  }
+
+  .img-feature {
+    width: 30%;
+  }
+
+  .title-feature {
+    font-family: "Andalus";
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  .desc-feature {
+    padding-right: 0rem;
+  }
+
+  .Title-client-say {
+    margin-top: 2rem;
+    margin-left: 0;
+    font-size: 3rem;
+  }
+
+  sup {
+    font-size: 3rem;
+    color: #9e8a45;
+  }
+
+  .client-say-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin: 2.5rem 0;
+  }
+
+  .client {
+    width: 370px;
+    height: 225px;
+  }
+
+  .client-say {
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+    padding-right: 0;
+    padding-left: 1rem;
+  }
+
+  .client-name {
+    font-family: "Andalus";
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+    margin-left: 1rem;
+  }
+
+  .container-quote {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .quote {
+    margin-top: 2rem;
+    margin-left: 0;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 50px;
+    padding: 0;
+  }
+
+  .img-camel-rest {
+    width: 100%;
+    border-radius: 0 0 64px 0;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .img-shadow-camels {
+    margin-top: 5rem;
+    background-image: url(../assets/Images/Shadow\ camel.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .question {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 350;
+    font-size: 1.25rem;
+  }
+
+  .Book {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-family: "Andalus";
+    font-weight: 500;
+    font-size: 3rem;
+  }
+
+  .Book::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+  }
+
+  .Book:hover::before {
+    transform: scaleX(1);
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  .logo-jawlah-footer {
+    width: 15%;
+  }
+  .btn-Confirm-Booking {
+    margin-top: 2rem;
+    height: 2rem;
+    width: 160px;
+  }
+
+  .btn-txt-Confirm-Booking {
+    font-size: 1rem;
+  }
+
+  .title-footer {
+    transform: scale(1.5);
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .form-label {
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    width: 25rem;
+    margin-top: 1rem;
+  }
+
+  .bg-glass-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+  }
+
+  .Copyright-footer {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* ----------------------------------- Media Query pc md ------------------------------------------------- */
+
+@media (min-width: 1101px) and (max-width: 1200px) {
+  .bg-glass-navbar {
+    display: flex;
+    width: 40%;
+  }
+
+  .txt-navbar {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .container {
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: 0 auto;
+  }
+
+  .Desc-About-Jawlah {
+    font-size: 1.5rem;
+    line-height: 22px;
+    padding: 0;
+  }
+}
+
+/* ----------------------------------- Media Query pc xl ------------------------------------------------- */
+
+@media (min-width: 1500px) and (max-width: 2400px) {
+  .bg-glass-logo-jawlah {
+    width: 130px;
+    height: 90px;
+  }
+
+  .logo-jawlah {
+    position: absolute;
+    width: 80%;
+    animation: fadeInUp3 1.75s ease-out forwards;
+  }
+
+  .bg-glass-navbar {
+    height: 100px;
+    width: 35%;
+  }
+  .txt-navbar {
+    font-size: 2rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .container-content {
+    transform: scale(1.23);
+  }
+
+  .img-men-with-camel {
+    width: 27%;
+    object-fit: cover;
+  }
+
+  .rectangle {
+    height: 36rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+}
+/* ----------------------------------- Media Query pc xxl ------------------------------------------------- */
+
+@media (min-width: 2402px) and (max-width: 3000px) {
+  .bg-glass-navbar {
+    height: 150px;
+    width: 35%;
+  }
+
+  .bg-glass-navbar {
+    height: 100px;
+    width: 35%;
+  }
+  .txt-navbar {
+    font-size: 2.5rem;
+  }
+}

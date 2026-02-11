@@ -1,0 +1,786 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@font-face {
+  font-family: "Andalus";
+  src: url(Assets/Fonts/Andalus.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #b2ae8a !important;
+}
+
+.Image-Desert {
+  background-image: url(../assets/Images/Desert.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  border-radius: 0 0 9.375rem 0;
+}
+
+.navbar1 {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+.bg-glass-logo-jawlah {
+  position: absolute;
+  width: 110px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  /* Glassmophirsm */
+  border-radius: 0 0 2rem 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp2 2s ease-out forwards;
+  /* End Glassmophirsm */
+}
+
+.logo-jawlah {
+  position: absolute;
+  width: 80%;
+  animation: fadeInUp2 2s ease-out forwards;
+}
+
+.content-navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-glass-navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 65px;
+  width: 35%;
+  border-radius: 0 0 8rem 8rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.37);
+  animation: fadeInUp2 2s ease-out forwards;
+}
+
+@keyframes fadeInUp2 {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.txt-navbar {
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-family: "Amiri Quran", serif;
+  font-size: 1.375rem;
+  animation: fadeInUp3 2s ease-out forwards;
+  transition: 0.7s;
+}
+
+@keyframes fadeInUp3 {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.txt-navbar:hover {
+  color: #9e8a45;
+}
+
+.Hero-Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.Hero-Title {
+  font-family: "Andalus";
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 0px;
+  animation: slideInTop 2s ease-out forwards;
+}
+
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.Hero-Description {
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.9px;
+  margin-bottom: 0;
+  animation: slideInRight 2s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.Activites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.Activitie {
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.875rem;
+  font-size: 250;
+  letter-spacing: -0.43px;
+  margin-bottom: 0;
+}
+
+.dotted {
+  margin-bottom: 0.7rem;
+}
+
+.CTA-button {
+  height: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.btn-txt-Choose-Now {
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 250;
+  font-size: 0.9rem;
+  margin-bottom: 0px;
+}
+
+.btn-Choose-Now {
+  border-radius: 10px !important;
+  width: 120px !important;
+  animation: fadeInUp5 2s ease-out forwards;
+  transition: 0.7s;
+}
+
+.button-Choose-Now:hover {
+  scale: 1.03;
+}
+
+.arrow-down {
+  width: 15%;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus,
+.btn-outline-dark:active {
+  background-color: inherit !important;
+}
+
+@keyframes fadeInUp5 {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Section-title-Activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 60%;
+}
+
+.title-Desert-Activities {
+  font-family: "Andalus";
+  font-size: 3rem;
+  color: black;
+  margin-top: 7rem;
+  margin-bottom: 0px;
+}
+
+.Image-Activite {
+  border-radius: 16px;
+  width: 95%;
+}
+
+.Container-Info-Activitie {
+  width: 29.375rem !important;
+  margin: auto 0 !important;
+}
+
+.title-Activite {
+  display: inline;
+  font-family: "Andalus";
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 0px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.Icon-title-Activite {
+  width: 40px;
+  height: 40px;
+}
+
+.description-Activite {
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.25rem;
+  text-align: justify;
+  font-weight: 400;
+  line-height: 22px;
+  margin-left: 4px;
+  margin-bottom: 0;
+}
+
+.icon-info-Activities {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.icon-Activitie1 {
+  width: 27px;
+  height: 27px;
+}
+
+.icon-Activitie2 {
+  width: 25px;
+  height: 25px;
+}
+
+.info-Activitie {
+  display: inline;
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 350;
+}
+
+.btn-book-now {
+  background-color: #231709 !important;
+  border-color: #231709 !important;
+  border-radius: 8px !important;
+  width: 120px !important;
+}
+
+.btn-txt-book-now {
+  font-family: "Andalus";
+  font-size: 1rem;
+  color: #9e8a45;
+}
+
+.underline {
+  text-decoration: none !important;
+}
+
+.arrow-right {
+  width: 26%;
+}
+
+.title-Activities-pack {
+  display: flex;
+  justify-content: center;
+  gap: 14rem;
+  margin-top: 3rem;
+}
+
+.icon-Activitie-Pack {
+  width: 40px;
+  height: 40px;
+}
+
+.title-Activite-pack {
+  display: inline;
+  font-family: "Andalus";
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 0px;
+  margin-left: 4px;
+  text-align: center;
+}
+
+.container-image-packs {
+  display: flex;
+  justify-content: center;
+  gap: 5.5rem;
+}
+
+.image-pack {
+  width: 26.4%;
+  border-radius: 16px;
+}
+
+.Container-Info-Activitie-pack {
+  margin: 1rem 2.5rem;
+}
+
+#btn-book-now {
+  display: flex !important;
+  justify-self: center !important;
+}
+
+.logo-jawlah-footer {
+  width: 15%;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.title-footer {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.75rem;
+}
+
+.form-label {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  width: 31.25rem;
+}
+
+.icons-social-media {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-left: 2rem;
+}
+
+.img1 {
+  width: 32px;
+  height: 32px;
+}
+
+.img2 {
+  width: 27px;
+  height: 27px;
+}
+
+.bg-glass-icon {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.326);
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.493);
+  transition: 0.7s;
+}
+
+.hero-txt-jawlah:hover,
+.bg-glass-icon:hover {
+  scale: 1.05;
+  opacity: 1;
+}
+
+.Copyright-footer {
+  text-align: right;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+
+/* ----------------------------------- Media Query Mobile ------------------------------------------------- */
+@media (max-width: 576px) {
+  .Image-Desert {
+    height: 70vh;
+  }
+
+  .bg-glass-logo-jawlah {
+    width: 55px;
+    height: 55px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+  }
+
+  .content-navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bg-glass-navbar {
+    background-image: url(../assets/Icons/Burger.png);
+    background-size: 50px 50px;
+    background-position: -4px 8px;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+
+  .txt-navbar {
+    display: none;
+  }
+
+  .Hero-Title {
+    font-size: 2rem;
+  }
+
+  .Hero-Description {
+    font-size: 14px;
+  }
+
+  .Activitie {
+    font-size: 0.7rem;
+  }
+
+  .btn-txt-Choose-Now {
+    font-weight: 250;
+    font-size: 0.75rem;
+    margin-bottom: 0px;
+  }
+
+  .btn-Choose-Now {
+    width: 110px !important;
+  }
+
+  .title-Desert-Activities {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  .Image-Activite {
+    width: 100%;
+  }
+
+  .Container-Info-Activitie {
+    margin-top: 1rem !important;
+  }
+
+  .title-Activite {
+    font-size: 1.5rem;
+  }
+
+  .Icon-title-Activite {
+    width: 30px;
+    height: 30px;
+  }
+
+  .description-Activite {
+    font-size: 1rem;
+  }
+
+  .Container-Info-Activitie-pack {
+    margin: 1rem 1rem;
+  }
+
+  .info-Activitie {
+    font-size: 1rem;
+  }
+
+  .btn-book-now {
+    display: flex !important;
+    justify-self: center !important;
+  }
+
+  .underline {
+    text-decoration: none !important;
+  }
+
+  .title-Activities-pack {
+    gap: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .container-image-packs {
+    display: flex;
+    justify-content: space-around;
+    gap: 0rem;
+  }
+
+  .icon-Activitie-Pack {
+    display: none;
+  }
+
+  .title-Activite-pack {
+    font-size: 1rem;
+  }
+
+  .image-pack {
+    object-fit: cover;
+    border-radius: 16px;
+    width: 120px;
+    height: 230px;
+  }
+
+  .logo-jawlah-footer {
+    width: 15%;
+  }
+
+  .title-footer {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .form-label {
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    width: 20rem !important;
+  }
+
+  .icons-social-media {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+
+  .img1 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .img2 {
+    width: 25px;
+    height: 25px;
+  }
+
+  .bg-glass-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+  }
+
+  .Copyright-footer {
+    font-size: 0.75rem;
+  }
+}
+
+/* ----------------------------------- Media Query tablet ------------------------------------------------- */
+
+@media (min-width: 577px) and (max-width: 843px) {
+  .Image-Desert {
+    height: 70vh;
+  }
+
+  .bg-glass-logo-jawlah {
+    width: 75px;
+    height: 75px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+  }
+
+  .content-navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bg-glass-navbar {
+    background-image: url(../assets/Icons/Burger.png);
+    background-size: 50px 50px;
+    background-position: 6px 16px;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+
+  .txt-navbar {
+    display: none;
+  }
+
+  .Container-Info-Activitie {
+    margin-top: 1rem !important;
+  }
+
+  .title-Activities-pack {
+    gap: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .title-Activite-pack {
+    font-size: 1.25rem;
+  }
+
+  .icon-Activitie-Pack {
+    width: 30px;
+    height: 30px;
+  }
+
+  .container-image-packs {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0rem;
+  }
+
+  .image-pack {
+    object-fit: cover;
+    border-radius: 16px;
+    width: 180px;
+    height: 290px;
+  }
+
+  .logo-jawlah-footer {
+    width: 15%;
+  }
+
+  .title-footer {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  .form-label {
+    width: 25rem !important;
+  }
+
+  .icons-social-media {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+
+  .img1 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .img2 {
+    width: 25px;
+    height: 25px;
+  }
+
+  .bg-glass-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+  }
+
+  .Copyright-footer {
+    font-size: 0.75rem;
+  }
+}
+/* ----------------------------------- Media Query pc-large ------------------------------------------------- */
+
+@media (min-width: 1500px) and (max-width: 3000px) {
+  .bg-glass-navbar {
+    height: 85px;
+    width: 30%;
+  }
+
+  .txt-navbar {
+    font-size: 1.85rem;
+  }
+
+  .Hero-Title {
+    font-size: 5rem;
+  }
+  .Hero-Description {
+    font-size: 1.75rem;
+  }
+
+  .Activitie {
+    font-size: 1.5rem;
+  }
+
+  .dotted {
+    margin-bottom: 0.7rem;
+    font-size: 1.75rem;
+  }
+  .btn-txt-Choose-Now {
+    font-size: 1.25rem;
+  }
+
+  .btn-Choose-Now {
+    width: 170px !important;
+  }
+}

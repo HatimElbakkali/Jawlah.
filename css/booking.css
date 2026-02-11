@@ -1,0 +1,924 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@font-face {
+  font-family: "Andalus";
+  src: url(Assets/Fonts/Andalus.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #b2ae8a;
+}
+
+/* NavBar */
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+.bg-glass-logo-jawlah {
+  position: absolute;
+  width: 110px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  /* Glassmophirsm */
+  border-radius: 0 0 2rem 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp2 1.75s ease-out forwards;
+  /* End Glassmophirsm */
+}
+
+.logo-jawlah {
+  position: absolute;
+  width: 80%;
+  animation: fadeInUp3 1.75s ease-out forwards;
+}
+
+.content-navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-glass-navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 65px;
+  width: 35%;
+  border-radius: 0 0 8rem 8rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.37);
+  animation: fadeInUp2 1.75s ease-out forwards;
+}
+
+@keyframes fadeInUp2 {
+  from {
+    opacity: 0.1;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.txt-navbar {
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-family: "Amiri Quran", serif;
+  font-size: 1.375rem;
+  animation: fadeInUp3 1.75s ease-out forwards;
+  transition: 0.7s;
+}
+
+@keyframes fadeInUp3 {
+  from {
+    opacity: 0.1;
+    scale: 0.5;
+    transform: translateY(-25px);
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0);
+  }
+}
+
+.txt-navbar:hover {
+  color: #9e8a45;
+  opacity: 1;
+}
+/* End NavBar */
+
+/* content */
+.container {
+  max-width: 1400px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container-content {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 3.5rem;
+}
+
+/* left-content */
+.img-men-with-camel {
+  width: 23%;
+  border-radius: 32px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.215);
+  animation: slideleft 1.75s ease-out forwards;
+}
+
+@keyframes slideleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-90px);
+  }
+}
+
+.rectangle {
+  background-color: white;
+  width: 2px;
+  height: 27.5rem;
+  display: flex;
+  align-self: center;
+  animation: slidebottom 1.75s ease-out forwards;
+}
+
+@keyframes slidebottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+.star {
+  display: flex;
+  justify-content: center;
+}
+
+.txt-star {
+  width: 1500%;
+  animation: rotate 2.5s ease 2s infinite forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotatex(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.txt-star:hover {
+  animation-play-state: paused;
+}
+
+/* End left-content */
+
+/* right-content */
+.hero-title {
+  color: white;
+  font-family: "Andalus";
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  animation: slidetop 1.75s ease-out forwards;
+}
+
+.form-container-info-personal {
+  display: flex;
+  gap: 100px;
+}
+
+.form-container-info-activitie {
+  display: flex;
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-top: 1rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.input {
+  color: white;
+  padding-left: 0.35rem;
+  height: 1.75rem;
+  border-radius: 6px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.37);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input[type="datetime-local"] {
+  color-scheme: dark;
+}
+
+.input[type="email"] {
+  width: 32.375rem;
+}
+
+.input[type="number"],
+.input[type="datetime-local"] {
+  width: 10rem;
+}
+
+.input[type="text"],
+.input[type="tel"] {
+  width: 13.125rem;
+}
+
+.input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+#aligned-right {
+  margin-left: 5rem;
+}
+
+.btn-Confirm-Booking {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 5px;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+  height: 1.75rem;
+  width: 160px;
+  border-radius: 6px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.37);
+}
+
+.btn-txt-Confirm-Booking {
+  color: #af8a05;
+  font-family: "Andalus";
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.img-camel-white {
+  width: 15%;
+  transform: scaleX(-1);
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: "Andalus";
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#aligned-top {
+  margin-top: 0.75rem;
+}
+
+.icons-social-media {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 0.75rem;
+}
+
+.img1 {
+  width: 28px;
+  height: 28px;
+}
+
+.img2 {
+  width: 27px;
+  height: 27px;
+}
+
+#aligned-center {
+  padding-left: 2px;
+}
+
+.bg-glass-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.493);
+  transition: 0.7s;
+}
+
+.hero-txt-jawlah:hover,
+.bg-glass-icon:hover {
+  scale: 1.05;
+  opacity: 1;
+}
+
+.slide-top-form-name {
+  animation: slidetop 1.75s ease-out forwards;
+}
+
+@keyframes slidetop {
+  0% {
+    opacity: 0.1;
+    transform: translateY(-100px);
+  }
+}
+
+.slide-top-form-phone-number {
+  animation: slidetop2 1.75s ease-out forwards;
+}
+
+@keyframes slidetop2 {
+  0% {
+    opacity: 0.1;
+    transform: translateY(-200px);
+  }
+}
+
+.slide-right-form-email {
+  animation: slide-right 1.75s ease-out forwards;
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0.1;
+    transform: translateX(100px);
+  }
+}
+
+.slide-form-date-picker {
+  animation: slidebottom 1.75s ease-out forwards;
+}
+
+.slide-bottom-form-duration {
+  animation: slidebottom2 1.75s ease-out forwards;
+}
+
+@keyframes slidebottom2 {
+  0% {
+    opacity: 0;
+    transform: translateY(170px);
+  }
+}
+
+.slide-bottom-form-passengers {
+  animation: slidebottom3 1.75s ease-out forwards;
+}
+
+@keyframes slidebottom3 {
+  0% {
+    opacity: 0;
+    transform: translateY(220px);
+  }
+}
+
+.slide-bottom-btn-book {
+  animation: slidebottom4 1.75s ease-out forwards;
+}
+
+@keyframes slidebottom4 {
+  0% {
+    opacity: 0;
+    transform: translateY(220px);
+  }
+}
+
+.slide-bottom-help {
+  animation: slidebottom5 1.75s ease-out forwards;
+}
+
+@keyframes slidebottom5 {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+}
+
+.slide-bottom-contact {
+  animation: slidebottom6 1.75s ease-out forwards;
+}
+
+@keyframes slidebottom6 {
+  0% {
+    opacity: 0;
+    transform: translateY(270px);
+  }
+}
+
+.slide-bottom-instagram {
+  animation: slidebottom7 1.75s ease-out forwards;
+}
+
+@keyframes slidebottom7 {
+  0% {
+    opacity: 0;
+    transform: translateY(280px);
+  }
+}
+
+.slide-bottom-feacbook {
+  animation: slidebottom8 1.75s ease-out forwards;
+}
+
+@keyframes slidebottom8 {
+  0% {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+}
+
+.slide-bottom-whatsapp {
+  animation: slidebottom9 1.75s ease-out forwards;
+}
+
+@keyframes slidebottom9 {
+  0% {
+    opacity: 0;
+    transform: translateY(500px);
+  }
+}
+
+.slide-bottom-X {
+  animation: slidebottom10 1.75s ease-out forwards;
+}
+
+@keyframes slidebottom10 {
+  0% {
+    opacity: 0;
+    transform: translateY(600px);
+  }
+}
+
+footer {
+  background-color: #231709;
+  margin-top: 2rem;
+}
+
+.logo-jawlah-footer {
+  width: 15%;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-footer {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.75rem;
+}
+
+.form-label {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  width: 31.25rem;
+}
+
+.form-control {
+  border: none;
+  border-radius: 6px;
+  height: 37.33px;
+  padding: 0.75rem;
+}
+
+.form-control:focus,
+textarea:focus,
+.btn-send:focus {
+  outline: none;
+}
+
+textarea {
+  font-family: "DM Sans", sans-serif;
+  resize: none;
+  border-radius: 6px;
+  height: 157px;
+  padding: 0.75rem;
+}
+
+.container-btn-send {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-send {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.1rem 1.5rem;
+  border-radius: 6px;
+  width: 84px;
+  height: 28px;
+  border: none;
+}
+
+.btn-txt-send {
+  color: black;
+}
+
+.Copyright-footer {
+  text-align: right;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  margin-right: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+/* ----------------------------------- Media Query Mobile ------------------------------------------------- */
+
+@media (max-width: 576px) {
+  body {
+    background-image: url(../assets/Images/Wave.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .container {
+    margin: 0 1.5rem;
+  }
+
+  .bg-glass-logo-jawlah {
+    width: 55px;
+    height: 55px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+  }
+
+  .content-navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bg-glass-navbar {
+    background-image: url(../assets/Icons/Burger.png);
+    background-size: 50px 50px;
+    background-position: -4px 8px;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+
+  .txt-navbar {
+    display: none;
+  }
+
+  .img-men-with-camel {
+    display: none;
+  }
+
+  .rectangle {
+    display: none;
+  }
+
+  .hero-title {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .form-container-info-personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .input[type="text"],
+  .input[type="tel"],
+  .input[type="datetime-local"],
+  .input[type="email"] {
+    width: 19rem;
+  }
+
+  .form-container-info-activitie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 35px;
+    row-gap: 0;
+  }
+
+  .input[type="number"] {
+    width: 8.45rem;
+  }
+
+  #aligned-right {
+    margin-left: 0;
+  }
+
+  .form-container-email {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  .logo-jawlah-footer {
+    width: 15%;
+  }
+  .btn-Confirm-Booking {
+    margin-top: 2rem;
+    height: 2rem;
+    width: 140px;
+  }
+
+  .btn-txt-Confirm-Booking {
+    font-size: 0.85rem;
+  }
+
+  .title-footer {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .form-label {
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    width: 20rem !important;
+  }
+
+  .bg-glass-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+  }
+
+  .Copyright-footer {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* ----------------------------------- Media Query tablet ------------------------------------------------- */
+
+@media (min-width: 577px) and (max-width: 843px) {
+  body {
+    background-image: url(../assets/Images/wave.png);
+    background-repeat: no-repeat;
+    background-size: 100% 12%;
+  }
+
+  .container {
+    margin: 0 2rem;
+  }
+
+  .bg-glass-logo-jawlah {
+    width: 75px;
+    height: 75px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+  }
+
+  .content-navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bg-glass-navbar {
+    background-image: url(../assets/Icons/Burger.png);
+    background-size: 50px 50px;
+    background-position: 6px 16px;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-self: flex-end;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+
+  .txt-navbar {
+    display: none;
+  }
+
+  .img-men-with-camel {
+    display: none;
+  }
+
+  .rectangle {
+    display: none;
+  }
+
+  .hero-title {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+
+  .form-container-info-personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .input[type="text"],
+  .input[type="tel"],
+  .input[type="datetime-local"],
+  .input[type="email"] {
+    width: 33rem;
+  }
+
+  .form-container-info-activitie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 35px;
+    row-gap: 0;
+  }
+
+  .input[type="number"] {
+    width: 15.4rem;
+  }
+
+  .form-container-email {
+    display: flex;
+    justify-content: center;
+  }
+
+  #aligned-right {
+    margin-left: 0;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  .logo-jawlah-footer {
+    width: 15%;
+  }
+  .btn-Confirm-Booking {
+    margin-top: 2rem;
+    height: 2rem;
+    width: 160px;
+  }
+
+  .btn-txt-Confirm-Booking {
+    font-size: 1rem;
+  }
+
+  .title-footer {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .form-label {
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    width: 20rem !important;
+  }
+
+  .bg-glass-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+  }
+
+  .Copyright-footer {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+  }
+}
+/* ----------------------------------- Media Query pc md ------------------------------------------------- */
+
+@media (min-width: 843px) and (max-width: 1200px) {
+  .bg-glass-navbar {
+    display: flex;
+    width: 40%;
+  }
+
+  .txt-navbar {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .img-men-with-camel {
+    width: 23%;
+    object-fit: cover;
+  }
+}
+
+/* ----------------------------------- Media Query pc xl ------------------------------------------------- */
+
+@media (min-width: 1500px) and (max-width: 2400px) {
+  .bg-glass-logo-jawlah {
+    width: 130px;
+    height: 90px;
+  }
+
+  .logo-jawlah {
+    position: absolute;
+    width: 80%;
+    animation: fadeInUp3 1.75s ease-out forwards;
+  }
+
+  .bg-glass-navbar {
+    height: 100px;
+    width: 35%;
+  }
+  .txt-navbar {
+    font-size: 1.75rem;
+  }
+
+  .container-content {
+    transform: scale(1.23);
+  }
+
+  .img-men-with-camel {
+    width: 27%;
+    object-fit: cover;
+  }
+
+  .rectangle {
+    height: 36rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+}
+/* ----------------------------------- Media Query pc xxl ------------------------------------------------- */
+
+@media (min-width: 2402px) and (max-width: 3000px) {
+  .bg-glass-navbar {
+    height: 150px;
+    width: 35%;
+  }
+  .container-content {
+    transform: scale(1.75);
+  }
+  .txt-navbar {
+    font-size: 2.5rem;
+  }
+}

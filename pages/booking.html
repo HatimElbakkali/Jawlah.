@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="../css/booking.css">
+    <link rel="shortcut icon" href="../assets/Logo/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/Logo/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/Logo/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="../assets/Logo/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="../assets/Logo/favicon-64.png" />
+    <link rel="icon" type="image/png" sizes="128x128" href="../assets/Logo/favicon-128.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/Logo/apple-touch-icon.png" />
+    <meta name="theme-color" content="#ffffff" />
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav>
+        <div class="bg-glass-logo-jawlah">
+            <img class="logo-jawlah" src="../assets/Logo/Jawlah.webp" alt="logo jawlah" />
+        </div>
+
+        <div class="content-navbar">
+            <div class="bg-glass-navbar">
+                <a href="../index.html" class="txt-navbar">Home</a>
+                <a href="../pages/Tour.html" class="txt-navbar">Tours</a>
+                <a href="../pages/booking.html" class="txt-navbar">Booking</a>
+                <a href="../pages/about us.html" class="txt-navbar">About us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- content -->
+    <main class="container">
+        <main class="container-content">
+            <!-- content left -->
+            <img class="img-men-with-camel" src="../assets/Images/men with camel.webp" alt="image-men-with-camel"
+                fetchpriority="high">
+            <div class="rectangle">
+                <span class="star">
+                    <img class="txt-star" src="../assets/Icons/star.svg" alt="star" loading="lazy">
+                </span>
+            </div>
+            <!-- End content left -->
+
+            <!-- content right -->
+            <div>
+                <h1 class="hero-title">Complete Tour Booking</h1>
+                <!-- form-field -->
+                <form method="post">
+                    <div class="form-container-info-personal">
+                        <div class="form-field slide-top-form-name">
+                            <label for="name" class="label">Full name</label>
+                            <input type="text" id="name" class="input" name="Full name">
+                        </div>
+                        <div class="form-field slide-top-form-phone-number">
+                            <label for="name" class="label">Phone Number</label>
+                            <input type="tel" id="name" class="input" name="Phone Number">
+                        </div>
+                    </div>
+                    <div class="form-container-email" style="display: flex; justify-content: center;">
+                        <div class="form-field  slide-right-form-email">
+                            <label for="email" class="label">Email</label>
+                            <input type="email" id="email" class="input" name="Email">
+                        </div>
+                    </div>
+
+                    <div class="form-container-info-activitie">
+                        <div class="form-field slide-form-date-picker">
+                            <label for="date" class="label">Date Picker</label>
+                            <input type="datetime-local" id="date" class="input" name="Date Picker">
+                        </div>
+                        <div class="form-field slide-bottom-form-duration">
+                            <label for="duration" class="label">Duration</label>
+                            <input type="number" id="duration" class="input" name="Duration">
+                        </div>
+                        <div class="form-field slide-bottom-form-passengers">
+                            <label for="Passengers" class="label">Passengers</label>
+                            <input type="number" id="Passengers" class="input" name="Passengers">
+                        </div>
+                    </div>
+
+                    <div class="form-container-info-activitie">
+                        <div class="form-field slide-bottom-form-duration" id="aligned-right">
+                            <label for="number" class="label">Price per person</label>
+                            <input type="number" id="number" class="input" name="Price per person">
+                        </div>
+                        <div class="form-field slide-bottom-form-passengers">
+                            <label for="number" class="label">Total Price</label>
+                            <input type="number" id="number" class="input" name="Total Price">
+                        </div>
+                    </div>
+                    <button class="btn-Confirm-Booking slide-bottom-btn-book" type="submit">
+                        <span class="btn-txt-Confirm-Booking">Confirm Booking</span>
+                        <img class="img-camel-white" src="../assets/Icons/camel-white.svg" loading="lazy">
+                    </button>
+                </form>
+                <div class="help">
+                    <p class="slide-bottom-help" id="aligned-top">Need help with your booking ?</p>
+                    <p class="slide-bottom-contact">Contact US</p>
+                </div>
+                <div class="icons-social-media">
+                    <a href="#" class="bg-glass-icon slide-bottom-instagram">
+                        <img class="img1" src="../assets/Icons/instagram-white.svg" alt="instagram" loading="lazy" />
+                    </a>
+
+                    <a href="#" class="bg-glass-icon slide-bottom-feacbook">
+                        <img class="img1" src="../assets/Icons/facebook-white.svg" alt="facebook" loading="lazy" />
+                    </a>
+                    <a href="#" class="bg-glass-icon slide-bottom-whatsapp" id="aligned-center">
+                        <img class="img1" src="../assets/Icons/whatsapp.svg" alt="whatsapp" loading="lazy" />
+                    </a>
+                    <a href="../pages/about us.html" class="bg-glass-icon slide-bottom-X">
+                        <img class="img2" src="../assets/Icons/X.svg" alt="X" loading="lazy" />
+                    </a>
+                </div>
+            </div>
+            <!-- End content right -->
+        </main>
+    </main>
+    <!-- End content -->
+
+    <!-- footer -->
+    <footer>
+        <img class="logo-jawlah-footer" src="../assets/Logo/Jawlah.webp" alt="logo jawlah" loading="lazy">
+        <div class="footer-content">
+            <p class="title-footer">We are here to answer any questions you have</p>
+            <form method="post">
+                <div class="form-field" id="aligned-top">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="Email address" name="Email">
+                </div>
+                <div class="form-field" id="aligned-top">
+                    <label for="textarea" class="form-label">Question</label>
+                    <textarea id="textarea" placeholder="Type here..." name="Question"></textarea>
+                </div>
+                <div class="container-btn-send">
+                    <button class="btn-send" type="submit"><span class="btn-txt-send">Send</span></button>
+                </div>
+            </form>
+        </div>
+        <p class="Copyright-footer">Copyright © 2025 JAWLAH.</p>
+    </footer>
+    <!-- End footer -->
+</body>
+
+</html>

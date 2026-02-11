@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+.hero-Image-a-group-tourist {
+  background-image: url(../assets/Images/group-people-camels-desert.avif);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.img-mountain {
+  position: absolute;
+  bottom: 0;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 55vh;
+  animation: fadeInUp1 2.5s ease-out forwards;
+}
+
+@keyframes fadeInUp1 {
+  from {
+    transform: translateY(45px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  height: 15%;
+}
+
+.bg-glass-logo-jawlah {
+  position: absolute;
+  width: 110px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  /* Glassmophirsm */
+  border-radius: 0 0 2rem 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp2 2.5s ease-out forwards;
+  /* End Glassmophirsm */
+}
+
+.logo-jawlah {
+  position: absolute;
+  width: 80%;
+  animation: fadeInUp3 2.5s ease-out forwards;
+}
+
+.content-navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-glass-navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 65px;
+  width: 35%;
+  border-radius: 0 0 8rem 8rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.37);
+  animation: fadeInUp2 2.5s ease-out forwards;
+}
+
+@keyframes fadeInUp2 {
+  from {
+    opacity: 0.1;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.txt-navbar {
+  text-decoration: none;
+  margin-bottom: 1.25rem;
+  color: white;
+  font-family: "Amiri Quran", serif;
+  font-size: 1.375rem;
+  animation: fadeInUp3 2.5s ease-out forwards;
+  transition: 0.7s;
+}
+
+@keyframes fadeInUp3 {
+  from {
+    opacity: 0.1;
+    scale: 0.5;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0);
+  }
+}
+
+.txt-navbar:hover {
+  color: #9e8a45;
+  opacity: 1;
+}
+
+.hero-txt-jawlah {
+  color: #af9c55;
+  mix-blend-mode: color-burn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Amiri Quran", serif;
+  height: 56vh;
+  font-size: 10rem;
+  animation: fadeInUp4 2.5s ease-out forwards;
+  transition: 0.7s;
+}
+
+@keyframes fadeInUp4 {
+  from {
+    transform: translateY(120px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.section-button-discover-jawlah {
+  height: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.button-discover-jawlah {
+  padding: 0.5rem 1.25rem;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(7.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.493);
+  transition: 0.7s;
+  animation: fadeInUp5 2.5s ease-out forwards;
+}
+
+.txt-button {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: 0.7s;
+}
+
+@keyframes fadeInUp5 {
+  from {
+    opacity: 0.5;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icons-social-media {
+  display: flex;
+  gap: 5px;
+  margin-left: 2rem;
+}
+
+.img1 {
+  width: 32px;
+  height: 32px;
+}
+
+.img2 {
+  width: 27px;
+  height: 27px;
+}
+
+.bg-glass-icon {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.326);
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.493);
+  animation: fadeInUp6 2.5s ease-out forwards;
+  transition: 0.7s;
+}
+
+@keyframes fadeInUp6 {
+  from {
+    opacity: 0.5;
+    transform: translateY(45px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.button-discover-jawlah:hover,
+.txt-button:hover,
+.hero-txt-jawlah:hover,
+.bg-glass-icon:hover {
+  scale: 1.05;
+  opacity: 1;
+}
+
+/* ----------------------------------- Media Query Mobile ------------------------------------------------- */
+
+@media (max-width: 576px) {
+  .hero-txt-jawlah {
+    font-size: 4.5rem;
+    height: 50vh;
+  }
+
+  .bg-glass-logo-jawlah {
+    width: 55px;
+    height: 55px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+  }
+
+  .content-navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bg-glass-navbar {
+    background-image: url(../assets/Icons/Burger.png);
+    background-size: 50px 50px;
+    background-position: -4px 8px;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+
+  .txt-navbar {
+    display: none;
+  }
+
+  .section-button-discover-jawlah {
+    height: 20%;
+  }
+
+  .icons-social-media {
+    display: none;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 843px) {
+  .hero-txt-jawlah {
+    font-size: 8rem;
+    height: 58vh;
+  }
+
+  .bg-glass-logo-jawlah {
+    width: 75px;
+    height: 75px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+  }
+
+  .content-navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bg-glass-navbar {
+    background-image: url(../assets/Icons/Burger.png);
+    background-size: 50px 50px;
+    background-position: 6px 16px;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    border-radius: 50%;
+  }
+
+  .txt-navbar {
+    display: none;
+  }
+
+  .section-button-discover-jawlah {
+    height: 20%;
+  }
+
+  .icons-social-media {
+    display: none;
+  }
+}
+
+/* ----------------------------------- Media Query tablet ------------------------------------------------- */
+
+@media (min-width: 843px) and (max-width: 1200px) {
+  .hero-txt-jawlah {
+    font-size: 8rem;
+    height: 58vh;
+  }
+
+  .bg-glass-navbar {
+    display: none;
+  }
+
+  .bg-glass-navbar {
+    display: flex;
+    height: 50%;
+    width: 30%;
+  }
+
+  .txt-navbar {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .section-button-discover-jawlah {
+    height: 20%;
+  }
+
+  .icons-social-media {
+    display: flex;
+    gap: 5px;
+    margin-left: 2rem;
+  }
+}
+
+/* ----------------------------------- Media Query pc xl ------------------------------------------------- */
+
+@media (min-width: 1500px) and (max-width: 2400px) {
+  .hero-txt-jawlah {
+    font-size: 15rem;
+    height: 58vh;
+  }
+
+  .bg-glass-navbar {
+    height: 100px;
+  }
+
+  .txt-navbar {
+    font-size: 1.9rem;
+  }
+
+  .button-discover-jawlah {
+    padding: 1rem 2rem;
+    border-radius: 16px;
+  }
+
+  .txt-button {
+    font-size: 1.5rem;
+  }
+
+  .img1 {
+  width: 45px;
+  height: 45px;
+}
+
+.img2 {
+  width: 40px;
+  height: 40px;
+}
+
+.bg-glass-icon {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+}
+
+/* ----------------------------------- Media Query pc xxl ------------------------------------------------- */
+
+@media (min-width: 2401px) and (max-width: 3000px) {
+  .hero-txt-jawlah {
+    font-size: 20rem;
+    height: 58vh;
+  }
+
+  .bg-glass-navbar {
+    height: 120px;
+  }
+
+  .txt-navbar {
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+  }
+
+  .button-discover-jawlah {
+    padding: 1rem 2rem;
+    border-radius: 16px;
+  }
+
+  .txt-button {
+    font-size: 1.5rem;
+  }
+
+  .img1 {
+  width: 50px;
+  height: 50px;
+}
+
+.img2 {
+  width: 45px;
+  height: 45px;
+}
+
+.bg-glass-icon {
+  position: relative;
+  width: 58px;
+  height: 58px;
+}
+}
