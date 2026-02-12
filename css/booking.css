@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Andalus";
-  src: url(Assets/Fonts/Andalus.ttf) format("truetype");
+  src: url(../assets/Fonts/Andalus.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
