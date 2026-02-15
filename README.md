@@ -99,11 +99,11 @@ Planned improvements:
 🚀 **Source code:**
 
 -🌐 review website:
--live demo: https://lnkd.in/edkrFk5Z
+- live demo: https://lnkd.in/edkrFk5Z
 
 -🔗 Project"JAWLAH.":
--source Figma: https://lnkd.in/eQW_2B2r
--source code: https://lnkd.in/e2zjypv2.
+- source Figma: https://lnkd.in/eQW_2B2r
+- source code: https://lnkd.in/e2zjypv2.
 
 ---
 
