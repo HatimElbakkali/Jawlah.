@@ -78,6 +78,8 @@ JAWLAH/
 🧑‍💻 **Technologies Used:**
 - HTML5
 - CSS3
+- Bootstrap5
+
 
 ---
 
@@ -94,9 +96,20 @@ Planned improvements:
 
 ---
 
+🚀 **Source code:**
+
+-🌐 review website:
+-live demo: https://lnkd.in/edkrFk5Z
+
+-🔗 Project"JAWLAH.":
+-source Figma: https://lnkd.in/eQW_2B2r
+-source code: https://lnkd.in/e2zjypv2.
+
+---
+
 📬 **Connect:**
 
 If you want to see more of my work or contact me:  
-All links on Social media: [https://linktr.ee/HatimElbakkali](https://linktr.ee/HatimElbakkali)
+All links on Social media: [https://linktr.ee/HatimElbakkali]
 
 Thank you! 😊
