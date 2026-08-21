@@ -1,0 +1,297 @@
+:root {
+    --body-bg: #b2ae8a;
+    --brown: #231709;
+    --brown-dark: #180f05;
+    --gold: #9e8a45;
+    --gold-light: #c4ad62;
+    --gold-hover: #b09a4d;
+    --white: #ffffff;
+    --text-primary: #231709;
+    --text-secondary: #3d3224;
+    --text-muted: #5e5445;
+    --error-red: #b71c1c;
+    --error-bg: rgba(183, 28, 28, 0.15);
+
+    --glass-light: rgba(255, 255, 255, 0.1);
+    --glass-transparent: rgba(255, 255, 255, 0);
+    --glass-border-light: rgba(255, 255, 255, 0.18);
+    --glass-border-icon: rgba(255, 255, 255, 0.326);
+    --glass-shadow: 0 8px 32px rgba(35, 23, 9, 0.1);
+    --glass-blur: blur(10px);
+
+    --font-heading: 'Andalus', serif;
+    --font-body: 'DM Sans', sans-serif;
+    --font-dot: "Amiri Quran", serif;
+    --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@font-face {
+    font-family: "Andalus";
+    src: url(../assets/Fonts/Andalus.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--body-bg);
+    background-image:
+        radial-gradient(circle at 15% 15%, rgba(255, 255, 255, 0.22) 0%, transparent 45%),
+        radial-gradient(circle at 85% 85%, rgba(35, 23, 9, 0.12) 0%, transparent 50%),
+        #b2ae8a;
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.name-brand{
+color: var(--gold);
+}
+
+.dot{
+    font-family: var(--font-dot);
+    color: var(--brown);
+}
+
+.auth-logo {
+    width: 140px;
+    height: auto;
+    margin-bottom: 1.25rem;
+    filter: drop-shadow(0 4px 12px rgba(35, 23, 9, 0.15));
+    transition: var(--transition-smooth);
+}
+
+.auth-logo:hover {
+    transform: scale(1.03);
+}
+
+.auth-title {
+    font-family: var(--font-heading);
+    font-size: 1.65rem;
+    font-weight: 400;
+    color: var(--brown);
+    letter-spacing: 0.01em;
+}
+
+.auth-card {
+    width: 100%;
+    background: var(--glass-light);
+    border: 1px solid var(--glass-border-light);
+    border-radius: 16px;
+    padding: 1.75rem;
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+
+.form-label-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.45rem;
+}
+
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.forgot-link {
+    font-size: 0.775rem;
+    color: var(--brown);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.forgot-link:hover {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--glass-border-icon);
+    border-radius: 10px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    outline: none;
+    transition: var(--transition-smooth);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.form-input:focus {
+    background: rgba(255, 255, 255, 0.35);
+    border-color: var(--brown);
+    box-shadow: 0 0 0 3px rgba(35, 23, 9, 0.15);
+}
+
+.form-input.error {
+    border-color: var(--error-red);
+    background: rgba(183, 28, 28, 0.08);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 0.75rem;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+    transition: var(--transition-smooth);
+}
+
+.toggle-password:hover {
+    opacity: 1;
+    color: var(--brown);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, var(--brown) 0%, #362410 100%);
+    color: var(--white);
+    border: 1px solid var(--gold-light);
+    border-radius: 10px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(35, 23, 9, 0.2);
+    transition: var(--transition-smooth);
+    margin-top: 0.5rem;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #180f05 0%, var(--brown) 100%);
+    box-shadow: 0 6px 20px rgba(35, 23, 9, 0.3);
+    transform: translateY(-1px);
+}
+
+.btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.error-banner {
+    display: none;
+    background: var(--error-bg);
+    border: 1px solid rgba(183, 28, 28, 0.3);
+    color: var(--error-red);
+    font-size: 0.825rem;
+    padding: 0.65rem 0.85rem;
+    border-radius: 10px;
+    margin-bottom: 1.25rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.sub-card {
+    width: 100%;
+    background: var(--glass-light);
+    border: 1px solid var(--glass-border-light);
+    border-radius: 14px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.sub-card a {
+    color: var(--brown);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+.sub-card a:hover {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+.auth-footer {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.footer-link:hover {
+    color: var(--brown);
+    text-decoration: underline;
+}
+
+.strength-bar {
+    height: 3px;
+    width: 100%;
+    background: rgba(35, 23, 9, 0.1);
+    border-radius: 4px;
+    margin-top: 0.4rem;
+    overflow: hidden;
+    display: none;
+}
+
+.strength-fill {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
