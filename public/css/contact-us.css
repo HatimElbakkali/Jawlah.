@@ -836,8 +836,8 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 55px;
-    height: 55px;
+    width: 75px;
+    height: 75px;
     margin-top: 2rem;
     margin-right: 1rem;
     border-radius: 50%;
@@ -849,8 +849,8 @@ a {
   }
 
   .glass-logo-bg {
-    width: 55px;
-    height: 55px;
+    width: 75px;
+    height: 75px;
     margin-top: 2rem;
     margin-left: 1rem;
     border-radius: 50%;
@@ -917,6 +917,18 @@ a {
 
   .footer-copyright {
     font-size: 0.75rem;
+  }
+
+  .hero__title {
+    margin-right: 11rem;
+  }
+
+  .hero__arrow {
+    position: absolute;
+    bottom: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.5rem;
   }
 }
 

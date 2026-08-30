@@ -884,6 +884,7 @@ sup {
 }
 
 @media (min-width: 577px) and (max-width: 1100px) {
+
   body {
     background: var(--bg) url("../assets/Images/Wave.png") top / contain no-repeat;
   }
@@ -906,18 +907,108 @@ sup {
   .nav-content {
     display: flex;
     justify-content: flex-end;
+    margin-top: 2rem;
+    margin-right: 1rem;
+  }
+
+  .nav-toggle {
+    display: block;
+    width: 75px;
+    height: 75px;
+    padding: 0;
+    border-radius: 50%;
+    background: var(--glass-background);
+    backdrop-filter: var(--glass-blur);
+    border: var(--glass-border);
+    box-shadow: 0 0 4px var(--shadow-light);
+    cursor: pointer;
+    z-index: 1001;
+    animation: fadeInUp var(--animation-duration) var(--transition-fast) forwards;
+  }
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: var(--white);
+    border-radius: 5px;
   }
 
   .nav-menu-glass {
     position: fixed;
-    width: 75px;
-    height: 75px;
-    margin-top: 2rem;
-    margin-right: 1rem;
-    border-radius: 50%;
+    top: 0;
+    right: 0;
+    width: 230px;
+    height: 100vh;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 8rem 1.5rem 5rem 1.5rem;
+    border-radius: 0;
+    border: none !important;
+    box-shadow: -5px 0 20px var(--shadow-strong);
+    backdrop-filter: blur(10px);
+    animation: none !important;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.4s ease, opacity 0.3s ease, visibility 0.4s;
+    z-index: 999;
   }
 
-  .nav-link,
+  .nav-menu-glass.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-link {
+    display: block;
+    margin: 0;
+    font-family: var(--font-title);
+    font-size: 2rem;
+    animation: none;
+  }
+
+  .sidebar-contact-info {
+    margin-top: 3.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: var(--font-text);
+  }
+
+  .sidebar-btn {
+    display: block;
+  }
+
+  .contact-link {
+    color: var(--gold);
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+
+  .location-txt {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+  }
+
+  .nav-link.active {
+    margin-left: 0;
+  }
+
+  .nav-link:first-of-type {
+    margin-left: 0;
+  }
+
   .main-logo {
     display: none;
   }

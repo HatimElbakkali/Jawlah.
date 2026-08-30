@@ -52,8 +52,8 @@ $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
             </a>
 
             <div class="sidebar-contact-info">
-                <a href="mailto:contact@jawlah.com" class="contact-link sidebar-btn">
-                    contact@jawlah.com
+                <a href="mailto:jawlah.contact@gmail.com" class="contact-link sidebar-btn">
+                    jawlah.contact@gmail.com
                 </a>
 
                 <a href="tel:+212600000000" class="contact-link sidebar-btn">
