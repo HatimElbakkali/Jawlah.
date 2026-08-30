@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
+  <?php require_once __DIR__ . '/../components/head.php' ?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - Jawlah</title>
-
   <link rel="shortcut icon" href="/public/assets/Logo/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="/public/assets/Logo/favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/public/assets/Logo/favicon-32.png">

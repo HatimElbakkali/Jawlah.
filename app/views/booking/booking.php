@@ -3,10 +3,10 @@
 <html lang="en">
 
 <head>
+  <?php require_once __DIR__ . '/../components/head.php' ?>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Experience | JAWLAH Desert Adventures</title>
-
   <link rel="preload" href="/public/assets/Fonts/Andalus.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
