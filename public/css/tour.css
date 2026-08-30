@@ -929,8 +929,8 @@ footer {
 
   .nav-toggle {
     display: block;
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
     margin-top: 2rem;
     border-radius: var(--radius-circle);
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));

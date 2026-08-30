@@ -466,8 +466,8 @@
   }
 
   .glass-logo-bg {
-    width: 55px;
-    height: 55px;
+    width: 75px;
+    height: 75px;
     margin-top: 2rem;
     margin-left: 1rem;
     border-radius: 50%;
@@ -481,8 +481,8 @@
 
   .nav-toggle {
     display: block;
-    width: 55px;
-    height: 55px;
+    width: 75px;
+    height: 75px;
     margin-top: 2rem;
     border-radius: 50%;
     background: var(--glass-background);
